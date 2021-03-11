@@ -22,7 +22,6 @@ i {
     color: black;
     background-color: transparent;
     justify-content: space-between;
-    margin-top: 5px;
 }
 
 .marge {
@@ -41,6 +40,7 @@ i {
     border-radius: 6px;
     width: 500px;
     height: 600px;
+    margin-top: 5px;
 }
 
 .center {

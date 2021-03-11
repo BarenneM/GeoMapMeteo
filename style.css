@@ -9,6 +9,10 @@ header {
     background-color: rgb(31, 192, 179);
 }
 
+i {
+    font-size: 50px
+}
+
 .navigation {
     display: flex;
     width: 90%;

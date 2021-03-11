@@ -12,20 +12,54 @@
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
         crossorigin=""></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">    <title>GeoMapMeteo</title>
     <title>Document</title>
 </head>
 
 <body>
-    <input list="villes" type="text" id="keyword">
-    <datalist id="villes"></datalist>
 
-    <div id="temp"></div>
-    <div id="mapid"></div>
-    <canvas id="myChart" width="400" height="400"></canvas>
+    <header>
+        <nav class="navigation">
+            <div class="logo"> logo </div>
+            <h1 class="titre"> GéoTemp </h1>
+        </nav>
+    </header>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 marge ">
+                <input list="villes" type="text" id="keyword">
+                <datalist id="villes"></datalist>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 marge"> Température actuelle : <div id="temp"></div> </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5 marge"><div id="mapid"></div></div>
+            <div class="col-md-5 marge"><canvas id="myChart" width="500" height="675"></canvas></div>
+            <div class="col-md-1"></div>
+        </div>
+        
+    </section>
+
+    
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="graph.js"></script>
     <script src="map.js"></script>
     <script src="main.js"> </script>
+    <script src="autoComplete.js"> </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>
